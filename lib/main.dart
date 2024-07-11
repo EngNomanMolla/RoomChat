@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         CountryLocalizations.delegate,
       ],
       getPages: RouteDestinations.pages,
-      initialRoute: RouteNames.genderCountryScreen,
+      initialRoute: RouteNames.bottomNavBarScreen,
     );
   }
 }

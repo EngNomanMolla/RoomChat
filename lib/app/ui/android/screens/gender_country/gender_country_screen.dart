@@ -183,7 +183,6 @@ class GenderAndCountryScreen extends StatelessWidget {
                     onTap: () {
 
                     }),
-
               ],
             ),
           );
