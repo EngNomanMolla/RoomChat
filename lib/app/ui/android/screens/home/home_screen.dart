@@ -10,6 +10,7 @@ class HomeScreen extends StatelessWidget {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
+       // backgroundColor: Colors.grey[200],
         appBar: AppBar(
           title: const Text(
             'Chat Room',
