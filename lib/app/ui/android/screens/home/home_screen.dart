@@ -1,4 +1,5 @@
 import 'package:chat_room/app/ui/android/screens/home/mine/mine_screen.dart';
+import 'package:chat_room/app/ui/android/screens/home/popular/popular_screen.dart';
 import 'package:chat_room/app/ui/themes/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -10,8 +11,8 @@ class HomeScreen extends StatelessWidget {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-       // backgroundColor: Colors.grey[200],
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           title: const Text(
             'Chat Room',
             style: TextStyle(
@@ -39,7 +40,7 @@ class HomeScreen extends StatelessWidget {
         body: TabBarView(
           children: [
             MineScreen(),
-            Center(child: Text('Popular')),
+            PopularScreen()
           ],
         ),
       ),

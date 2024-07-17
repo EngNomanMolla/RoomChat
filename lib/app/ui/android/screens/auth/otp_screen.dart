@@ -1,7 +1,9 @@
+import 'package:chat_room/app/routes/route_names.dart';
 import 'package:chat_room/app/ui/themes/colors.dart';
 import 'package:chat_room/app/ui/themes/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+import 'package:get/get.dart';
 class OTPScreen extends StatelessWidget {
   const OTPScreen({super.key});
 
@@ -34,15 +36,7 @@ class OTPScreen extends StatelessWidget {
               },
               //runs when every textfield is filled
               onSubmit: (String verificationCode){
-                showDialog(
-                    context: context,
-                    builder: (context){
-                      return AlertDialog(
-                        title: Text("Verification Code"),
-                        content: Text('Code entered is $verificationCode'),
-                      );
-                    }
-                );
+                Get.toNamed(RouteNames.bottomNavBarScreen);
               }, // end onSubmit
             ),
           ],

@@ -9,6 +9,7 @@ class MessageScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AllColors.primaryColor,
+        automaticallyImplyLeading: false,
         title: const Text(
           'Messages',
           style: TextStyle(
@@ -33,11 +34,14 @@ class MessageScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                 Text("Abdullah Al Noman",style: AllTextStyles.titleBlackBoldTextStyle.copyWith(fontSize: 14.0)),
-                Text("10/7 2024",style: TextStyle(
-                  color: AllColors.greyColor,
-                  fontSize: 12.0,
-                  fontFamily: 'Montserrat'
-                ))
+                Padding(
+                  padding: const EdgeInsets.only(top: 4.0),
+                  child: Text("10/7 2024",style: TextStyle(
+                    color: AllColors.greyColor,
+                    fontSize: 12.0,
+                    fontFamily: 'Montserrat'
+                  )),
+                )
               ]),
               subtitle: Text("I followed you",style: TextStyle(
                 color: Colors.grey,

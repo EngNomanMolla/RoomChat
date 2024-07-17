@@ -118,7 +118,7 @@ class LoginScreen extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),
                           child: Text(
-                            "Or auth",
+                            "Or login",
                             style: TextStyle(
                                 color: AllColors.primaryColor,
                                 fontFamily: "Montserrat"),
