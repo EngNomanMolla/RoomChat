@@ -1,4 +1,5 @@
 import 'package:chat_room/app/controllers/gender_country_controller.dart';
+import 'package:chat_room/app/routes/route_names.dart';
 import 'package:chat_room/app/ui/themes/colors.dart';
 import 'package:chat_room/app/ui/themes/text_styles.dart';
 import 'package:chat_room/app/ui/widgets/custom_button.dart';
@@ -181,7 +182,7 @@ class GenderAndCountryScreen extends StatelessWidget {
                     title: "Next",
                     titleColor: AllColors.whiteColor,
                     onTap: () {
-
+                       Get.toNamed(RouteNames.bottomNavBarScreen);
                     }),
               ],
             ),

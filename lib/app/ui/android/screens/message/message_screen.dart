@@ -1,6 +1,8 @@
+import 'package:chat_room/app/routes/route_names.dart';
 import 'package:chat_room/app/ui/themes/colors.dart';
 import 'package:chat_room/app/ui/themes/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 class MessageScreen extends StatelessWidget {
   const MessageScreen({super.key});
 
@@ -22,6 +24,9 @@ class MessageScreen extends StatelessWidget {
           itemCount: 10,
           itemBuilder: (context,index){
             return ListTile(
+              onTap: (){
+                Get.toNamed(RouteNames.messageDetailsScreen);
+              },
               leading: CircleAvatar(
                 backgroundColor: AllColors.primaryColor.withOpacity(0.1),
                 radius: 25.0,

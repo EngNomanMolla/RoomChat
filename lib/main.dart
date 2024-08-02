@@ -31,8 +31,8 @@ class MyApp extends StatelessWidget {
         CountryLocalizations.delegate,
       ],
       getPages: RouteDestinations.pages,
-      //initialRoute: RouteNames.loginScreen,
-      home: PopularScreen(),
+      initialRoute: RouteNames.loginScreen,
+     // home: PopularScreen(),
     );
   }
 }

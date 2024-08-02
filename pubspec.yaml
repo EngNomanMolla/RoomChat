@@ -41,6 +41,8 @@ dependencies:
   motion_tab_bar: ^2.0.4
   loading_indicator: ^3.1.1
   flutter_chat_ui: ^1.6.14
+  text_marquee: ^0.0.2
+  chatview: ^2.0.0
 
 dev_dependencies:
   flutter_test:

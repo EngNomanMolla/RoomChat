@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
           ),
           backgroundColor: AllColors.primaryColor,
           bottom: TabBar(
-            indicatorColor: Color(0xff6200EE),
+            indicatorColor: AllColors.whiteColor,
             labelColor: AllColors.whiteColor,
             unselectedLabelColor: AllColors.greyColor,
             indicatorWeight: 4.0,

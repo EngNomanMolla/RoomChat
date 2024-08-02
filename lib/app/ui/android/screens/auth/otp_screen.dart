@@ -26,6 +26,8 @@ class OTPScreen extends StatelessWidget {
             OtpTextField(
               numberOfFields: 5,
               borderColor: AllColors.primaryColor,
+              //enabledBorderColor: AllColors.primaryColor,
+              focusedBorderColor: AllColors.primaryColor,
               autoFocus: true,
               //set to true to show as box or false to show as dash
               showFieldAsBox: true,
@@ -36,7 +38,7 @@ class OTPScreen extends StatelessWidget {
               },
               //runs when every textfield is filled
               onSubmit: (String verificationCode){
-                Get.toNamed(RouteNames.bottomNavBarScreen);
+                Get.toNamed(RouteNames.genderCountryScreen);
               }, // end onSubmit
             ),
           ],

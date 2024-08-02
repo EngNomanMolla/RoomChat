@@ -1,5 +1,5 @@
 import 'package:chat_room/app/ui/themes/colors.dart';
-import 'package:chat_room/app/ui/themes/text_styles.dart';
+
 import 'package:flutter/material.dart';
 class FollowScreen extends StatelessWidget {
   const FollowScreen({super.key});
@@ -7,44 +7,98 @@ class FollowScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:  ListView.separated(
-          itemCount: 10,
-          itemBuilder: (context,index){
-            return ListTile(
-              leading: CircleAvatar(
-                  backgroundColor: AllColors.primaryColor.withOpacity(0.1),
-                  radius: 25.0,
-                  child:ClipRRect(
-                      borderRadius: BorderRadius.circular(100.0),
-                      child: Image.asset("assets/images/jpg/girl.jpg",height: 45.0,width: 45.0,fit: BoxFit.cover))) ,
+      body: Container(
+        padding: EdgeInsets.all(12.0),
+        child: Column(
+          children: [
 
-              title: Row(
+            Expanded(
+              child: ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: 10,
+                  itemBuilder: (context,index){
 
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text("Abdullah Al Noman",style: AllTextStyles.titleBlackBoldTextStyle.copyWith(fontSize: 14.0)),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 4.0),
-                      child: Text("10/7 2024",style: TextStyle(
-                          color: AllColors.greyColor,
-                          fontSize: 12.0,
-                          fontFamily: 'Montserrat'
-                      )),
-                    )
-                  ]),
-              subtitle: Text("I followed you",style: TextStyle(
-                  color: Colors.grey,
-                  fontFamily: "Montserrat"
-              )),
-            );
-          }, separatorBuilder: (context,index){
-        return Divider(
-          color: AllColors.greyColor,
-          thickness: 0.3,
-          indent: 18.0,
-          endIndent: 18.0,
-        );
-      }),
+                    return _popularCardView(context);
+
+                  }),
+            )
+
+
+          ],
+        ),
+      ),
+
     );
   }
+
+  _popularCardView(BuildContext context){
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 5.0),
+      child: Card(
+        child: Padding(
+          padding: const EdgeInsets.only(top: 12.0,bottom: 12.0,left: 10.0,right: 10.0),
+          child: Row(
+            children: [
+              Expanded(child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 5.0),
+                      child: Text("সবার কাছে পর হয়ে আছি উপায় নেই আমার",style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: AllColors.blackColor
+                      ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.only(right: 5.0),
+                      child: Text("সবার কাছে পর হয়ে আছি উপায় নেই আমার",style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontSize: 12.0,
+                          color: AllColors.greyColor
+                      ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                    SizedBox(height: 5.0),
+
+                    SizedBox(
+                      height: 28,
+                      child: ListView.builder(
+                          itemCount: 5,
+                          scrollDirection: Axis.horizontal,
+                          shrinkWrap: true,
+                          itemBuilder: (context,index){
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 8.0),
+                              child: Container(
+                                height: 28.0,
+                                width: 28.0,
+                                child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(100),
+                                    child: Image.asset('assets/images/jpg/girl.jpg',fit: BoxFit.cover)),
+                              ),
+                            );
+                          }),
+                    )
+
+
+
+                  ])),
+              Container(height: 50,width: 50),
+
+
+            ],
+          ),
+        ),
+      ),
+    );
+
+  }
+
+
 }
