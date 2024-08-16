@@ -86,10 +86,33 @@ class FollowScreen extends StatelessWidget {
                           }),
                     )
 
-
-
                   ])),
-              Container(height: 50,width: 50),
+              Container(
+                height: 100,
+                width: 100,
+                child: Stack(
+                  children: [
+                    // The main image centered
+                    Align(
+                      alignment: Alignment.center,
+                      child: SizedBox(
+                        height: 60,
+                        width: 60,
+                        child: Image.asset(
+                          'assets/images/jpg/girl.jpg',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    // The frame image
+                    Image.asset(
+                      'assets/images/png/level_one_frame.png',
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+              )
+
 
 
             ],

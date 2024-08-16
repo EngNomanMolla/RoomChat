@@ -3,6 +3,7 @@ import 'package:chat_room/app/routes/route_destinations.dart';
 import 'package:chat_room/app/routes/route_names.dart';
 import 'package:chat_room/app/ui/android/screens/auth/login_screen.dart';
 import 'package:chat_room/app/ui/android/screens/chat/chat_screen.dart';
+import 'package:chat_room/app/ui/android/screens/home/mine/follow/follow_screen.dart';
 import 'package:chat_room/app/ui/android/screens/home/popular/popular_screen.dart';
 import 'package:chat_room/app/ui/android/screens/profile/profile_screen.dart';
 import 'package:country_code_picker/country_code_picker.dart';
@@ -31,8 +32,7 @@ class MyApp extends StatelessWidget {
         CountryLocalizations.delegate,
       ],
       getPages: RouteDestinations.pages,
-      initialRoute: RouteNames.loginScreen,
-     // home: PopularScreen(),
+     initialRoute: RouteNames.loginScreen,
     );
   }
 }

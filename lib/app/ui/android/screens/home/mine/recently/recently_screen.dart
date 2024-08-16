@@ -44,7 +44,7 @@ class RecentlyScreen extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     ),
                   ),
-                 Icon(IconData(0xf708, fontFamily: 'MaterialIcons'),color: Colors.green),
+                  Icon(Icons.flag,color: Colors.green),
                   Row(
                     children: [
                       Expanded(child: Text("Welcome to my room",style: TextStyle(
