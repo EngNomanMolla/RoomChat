@@ -1,5 +1,7 @@
 
+import 'package:chat_room/app/routes/route_names.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
@@ -93,11 +95,14 @@ class ProfileScreen extends StatelessWidget {
 
             ListTile(
               leading: Icon(Icons.wallet_rounded),
-              trailing: Icon(Icons.arrow_forward_ios,size: 16.0),
-              title: Text("Wallet",style: TextStyle(
-                fontFamily: 'Montserrat',
+              trailing: Icon(Icons.arrow_forward_ios, size: 16.0),
+              title: Text(
+                "Wallet",
+                style: TextStyle(
+                  fontFamily: 'Montserrat',
+                ),
               ),
-              ),
+              onTap: () => Get.toNamed(RouteNames.walletScreen),
             ),
 
             ListTile(

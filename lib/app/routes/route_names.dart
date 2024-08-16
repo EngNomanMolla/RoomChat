@@ -7,4 +7,5 @@ class RouteNames{
   static const String chatRoomScreen = '/chat-room-screen';
   static const String messageScreen = '/message-screen';
   static const String messageDetailsScreen = '/message-details-screen';
+  static const walletScreen = '/wallet';
 }

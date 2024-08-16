@@ -2,6 +2,8 @@
 
 import 'package:chat_room/app/bindings/auth_binding.dart';
 import 'package:chat_room/app/bindings/chat_binding.dart';
+import 'package:chat_room/app/modules/wallet/bindings/wallet_binding.dart';
+import 'package:chat_room/app/modules/wallet/views/wallet_view.dart';
 import 'package:chat_room/app/routes/route_names.dart';
 import 'package:chat_room/app/ui/android/screens/auth/login_screen.dart';
 import 'package:chat_room/app/ui/android/screens/auth/otp_screen.dart';
@@ -23,5 +25,10 @@ class RouteDestinations{
     GetPage(name: RouteNames.chatRoomScreen, page:()=> ChatRoomScreen()),
     GetPage(name: RouteNames.messageScreen, page:()=> MessageScreen()),
     GetPage(name: RouteNames.messageDetailsScreen, page:()=> MessageDetailsScreen()),
+    GetPage(
+      name: RouteNames.walletScreen,
+      page: () => const WalletView(),
+      binding: WalletBinding(),
+    ),
   ];
 }
