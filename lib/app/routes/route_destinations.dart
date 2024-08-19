@@ -1,7 +1,7 @@
-
-
 import 'package:chat_room/app/bindings/auth_binding.dart';
 import 'package:chat_room/app/bindings/chat_binding.dart';
+import 'package:chat_room/app/modules/invite_friend/bindings/invite_friend_binding.dart';
+import 'package:chat_room/app/modules/invite_friend/views/invite_friend_view.dart';
 import 'package:chat_room/app/modules/wallet/bindings/wallet_binding.dart';
 import 'package:chat_room/app/modules/wallet/views/wallet_view.dart';
 import 'package:chat_room/app/routes/route_names.dart';
@@ -29,6 +29,11 @@ class RouteDestinations{
       name: RouteNames.walletScreen,
       page: () => const WalletView(),
       binding: WalletBinding(),
+    ),
+    GetPage(
+      name: RouteNames.inviteFriendScreen,
+      page: () => const InviteFriendView(),
+      binding: InviteFriendBinding(),
     ),
   ];
 }
