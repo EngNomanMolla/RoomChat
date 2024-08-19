@@ -9,4 +9,5 @@ class RouteNames{
   static const String messageDetailsScreen = '/message-details-screen';
   static const walletScreen = '/wallet';
   static const inviteFriendScreen = '/invite-friend';
+  static const medalScreen = '/medal';
 }

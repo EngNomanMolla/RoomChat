@@ -125,6 +125,16 @@ class ProfileScreen extends StatelessWidget {
             ),
 
             ListTile(
+              leading: Icon(Icons.leaderboard_rounded),
+              trailing: Icon(Icons.arrow_forward_ios,size: 16.0),
+              title: Text("Medal",style: TextStyle(
+                fontFamily: 'Montserrat',
+              ),
+              ),
+              onTap: () => Get.toNamed(RouteNames.medalScreen),
+            ),
+
+            ListTile(
               leading: Icon(Icons.settings),
               trailing: Icon(Icons.arrow_forward_ios,size: 16.0),
               title: Text("Settings",style: TextStyle(
