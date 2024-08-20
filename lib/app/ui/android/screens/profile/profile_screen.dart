@@ -122,6 +122,7 @@ class ProfileScreen extends StatelessWidget {
                 fontFamily: 'Montserrat',
               ),
               ),
+              onTap: () => Get.toNamed(RouteNames.levelScreen),
             ),
 
             ListTile(

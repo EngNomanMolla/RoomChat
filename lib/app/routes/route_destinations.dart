@@ -2,6 +2,8 @@ import 'package:chat_room/app/bindings/auth_binding.dart';
 import 'package:chat_room/app/bindings/chat_binding.dart';
 import 'package:chat_room/app/modules/invite_friend/bindings/invite_friend_binding.dart';
 import 'package:chat_room/app/modules/invite_friend/views/invite_friend_view.dart';
+import 'package:chat_room/app/modules/level/bindings/level_binding.dart';
+import 'package:chat_room/app/modules/level/views/level_view.dart';
 import 'package:chat_room/app/modules/medal/bindings/medal_binding.dart';
 import 'package:chat_room/app/modules/medal/views/medal_view.dart';
 import 'package:chat_room/app/modules/wallet/bindings/wallet_binding.dart';
@@ -41,6 +43,11 @@ class RouteDestinations{
       name: RouteNames.medalScreen,
       page: () => const MedalView(),
       binding: MedalBinding(),
+    ),
+    GetPage(
+      name: RouteNames.levelScreen,
+      page: () => const LevelView(),
+      binding: LevelBinding(),
     ),
   ];
 }

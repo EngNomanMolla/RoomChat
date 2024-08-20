@@ -10,4 +10,5 @@ class RouteNames{
   static const walletScreen = '/wallet';
   static const inviteFriendScreen = '/invite-friend';
   static const medalScreen = '/medal';
+  static const levelScreen = '/level';
 }
