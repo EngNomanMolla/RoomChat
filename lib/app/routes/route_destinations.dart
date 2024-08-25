@@ -14,9 +14,12 @@ import 'package:chat_room/app/ui/android/screens/auth/otp_screen.dart';
 import 'package:chat_room/app/ui/android/screens/bottom_nav_bar/bottom_nav_bar_screen.dart';
 import 'package:chat_room/app/ui/android/screens/chat/chat_screen.dart';
 import 'package:chat_room/app/ui/android/screens/chat_room/chat_room_screen.dart';
+import 'package:chat_room/app/ui/android/screens/cp/cp_screen.dart';
 import 'package:chat_room/app/ui/android/screens/gender_country/gender_country_screen.dart';
 import 'package:chat_room/app/ui/android/screens/message/message_details_screen.dart';
 import 'package:chat_room/app/ui/android/screens/message/message_screen.dart';
+import 'package:chat_room/app/ui/android/screens/my_item/my_item_screen.dart';
+import 'package:chat_room/app/ui/android/screens/store/store_screen.dart';
 import 'package:get/get.dart';
 
 class RouteDestinations{
@@ -49,5 +52,8 @@ class RouteDestinations{
       page: () => const LevelView(),
       binding: LevelBinding(),
     ),
+    GetPage(name: RouteNames.cpScreen, page:()=> CPScreen()),
+    GetPage(name: RouteNames.store, page:()=> StoreScreen()),
+    GetPage(name: RouteNames.myItems, page:()=> MyItemScreen()),
   ];
 }

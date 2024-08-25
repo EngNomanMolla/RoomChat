@@ -11,4 +11,7 @@ class RouteNames{
   static const inviteFriendScreen = '/invite-friend';
   static const medalScreen = '/medal';
   static const levelScreen = '/level';
+  static const String cpScreen = '/cp-screen';
+  static const String store = '/store-screen';
+  static const String myItems = '/my-items';
 }
