@@ -6,6 +6,8 @@ import 'package:chat_room/app/modules/level/bindings/level_binding.dart';
 import 'package:chat_room/app/modules/level/views/level_view.dart';
 import 'package:chat_room/app/modules/medal/bindings/medal_binding.dart';
 import 'package:chat_room/app/modules/medal/views/medal_view.dart';
+import 'package:chat_room/app/modules/room_settings/bindings/room_settings_binding.dart';
+import 'package:chat_room/app/modules/room_settings/views/room_settings_view.dart';
 import 'package:chat_room/app/modules/wallet/bindings/wallet_binding.dart';
 import 'package:chat_room/app/modules/wallet/views/wallet_view.dart';
 import 'package:chat_room/app/routes/route_names.dart';
@@ -55,5 +57,10 @@ class RouteDestinations{
     GetPage(name: RouteNames.cpScreen, page:()=> CPScreen()),
     GetPage(name: RouteNames.store, page:()=> StoreScreen()),
     GetPage(name: RouteNames.myItems, page:()=> MyItemScreen()),
+    GetPage(
+      name: RouteNames.roomSettings,
+      page: () => const RoomSettingsView(),
+      binding: RoomSettingsBinding(),
+    ),
   ];
 }

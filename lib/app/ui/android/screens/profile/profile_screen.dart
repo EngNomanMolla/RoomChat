@@ -186,6 +186,9 @@ class ProfileScreen extends StatelessWidget {
                     fontFamily: 'Montserrat',
                   ),
                 ),
+                onTap: () {
+                  Get.toNamed(RouteNames.roomSettings);
+                },
               ),
               ListTile(
                 leading: Icon(Icons.logout_sharp),

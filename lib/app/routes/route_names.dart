@@ -14,4 +14,5 @@ class RouteNames{
   static const String cpScreen = '/cp-screen';
   static const String store = '/store-screen';
   static const String myItems = '/my-items';
+  static const String roomSettings = '/room-settings';
 }
